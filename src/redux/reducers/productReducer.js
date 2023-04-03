@@ -6,7 +6,12 @@ const initialState = {
             id: 1,
             title: "Samsung Galaxy S21",
             category: "smartphones",
-        }
+        },
+        {
+            id: 2,
+            title: "Samsung Galaxy S21 Ultra",
+            category: "smartphones",
+        },
     ],
 };
 
