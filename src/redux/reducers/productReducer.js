@@ -18,6 +18,6 @@ export const selectedProductReducer = (state = {}, { type, payload }) => {
     case ActionTypes.SELECTED_PRODUCT:
       return { ...state, ...payload };
     default:
-      state;
+      return state;
   }
 };
