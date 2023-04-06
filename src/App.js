@@ -6,15 +6,16 @@ import ProductDetails from "./containers/ProductDetails";
 
 function App() {
   return (
-    <div className="App">
-      <h1></h1>
+    <div className="ui container">
       <Router>
         <Header />
-        <Routes>
-          <Route exact path="/" element={<ProductListing />} />
-          <Route path="/product/:productId" element={<ProductDetails />} />
-          <Route>Page not found</Route>
-        </Routes>
+        <div className="ui container" style={{ marginTop: "60px" }}>
+          <Routes>
+            <Route exact path="/" element={<ProductListing />} />
+            <Route path="/product/:productId" element={<ProductDetails />} />
+            <Route>Page not found</Route>
+          </Routes>
+        </div>
       </Router>
     </div>
   );

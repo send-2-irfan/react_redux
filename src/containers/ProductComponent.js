@@ -8,7 +8,7 @@ function ProductComponent() {
   const renderList = products.map((item) => {
     const { id, title, image, price, category } = item;
     return (
-      <div className="four-column" key={id}>
+      <div className="four columns wide" key={id}>
         <Link to={`/product/${id}`}>
           <div className="ui link cards">
             <div className="card">
@@ -27,29 +27,7 @@ function ProductComponent() {
     );
   });
 
-  return (
-    <>
-      {" "}
-      <div className="card w-600 h-400">
-        <div className="ui link cards">
-          <div className="card">
-            <div className="image">
-              <img
-                src={
-                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO-hlLa1mnf2V1p__dFMxkNjf44wHphOxH2g&usqp=CAU"
-                }
-              />
-            </div>
-            <div className="content">
-              <div className="header">My name is cat from KG</div>
-              <div className="meta price">$ price</div>
-              <div className="meta">Category</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
-  );
+  return <>{renderList}</>;
 }
 
 export default ProductComponent;
